@@ -69,3 +69,6 @@ public class HelloWorld {
 
     }
 }
+
+
+//Static block is for initialization of static block that is static variable
