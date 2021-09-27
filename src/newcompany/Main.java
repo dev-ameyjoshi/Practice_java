@@ -8,5 +8,6 @@ public class Main {
         int num3 = 10;
         int sum = num1 + num2 + num3 ;
         System.out.print("The sum is :" + sum);
+
     }
 }

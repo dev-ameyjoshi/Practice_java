@@ -42,8 +42,8 @@ public class studentDetails {
         }
 
 
-//
-//
+
+
 //        System.out.println("Student name: "+student2.getname());
 //        System.out.println("Roll number: "+student2.getRoll());
 //        System.out.println("College: "+student2.getCollege_name());
