@@ -71,8 +71,20 @@ public class cwh_19_ch4_ps {
 //            System.out.println("This  is not a leap year");
 //        }
 
-// Answer 6
+// Answer 6 26:41
 
+
+ Scanner sc = new Scanner(System.in);
+ String website = sc.next();
+ if(website.endsWith(".org")){
+     System.out.println("This is an organisational website!");
+ }
+ else if(website.endsWith(".com")){
+     System.out.println("This is a Commercial website!");
+ }
+ else if(website.endsWith(".in")){
+     System.out.println("This is an indian website!");
+ }
 
 
 
