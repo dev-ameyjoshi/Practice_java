@@ -9,11 +9,6 @@ public class Exception_problems_01 {
             int output = numOne/numTwo;
             System.out.print(output);
 
-//            ArrayIndexOutOfBoundsException
-            int a[]=new int[10];
-
-            a[11] = 9;
-
         }catch (ArithmeticException e){
             System.out.println("Number divided by zero gives Arithmetic exception handling");
 
