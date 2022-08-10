@@ -13,17 +13,23 @@ public class cwh_25_practice_set {
 //        }
 
         //Practice Problem 2
-        int sum = 0;
-        int n = 4;
-        for (int i = 0;i<n;i++) {
-            sum = sum + (2*i);
-
-        }
-        System.out.print("Sum of even numbers is :");
-        System.out.print(sum);
+//        int sum = 0;
+//        int n = 4;
+//        for (int i = 0;i<n;i++) {
+//            sum = sum + (2*i);
+//
+//        }
+//        System.out.print("Sum of even numbers is :");
+//        System.out.print(sum);
         //first 4 even number is 0 2 4 6
 
         //Practice Problem 3
+        int n = 5;
+     //   for (int i = 0;i<10;i++) - Goes from i = 0 to i = 9
+            for (int i = 1; i <=10;i++ ) {
+                System.out.printf("%d X %d = %d\n ",n,i,n*i);
+            }
+
 
 
     }
