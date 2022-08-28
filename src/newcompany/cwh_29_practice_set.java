@@ -79,10 +79,69 @@ public class cwh_29_practice_set {
 
         //Problem 5
         // a[i] is replaced with l-i-1 to get the element it has to be replaced with.
+//       int arr [] = {1,2,3,4,5,6};
+//       int l = arr.length;
+//       int n = Math.floorDiv(l,2);
+//       int temp;
+//
+//        for (int i = 0; i < n; i++) {
+//            //Swaping method is used.
+//            temp = arr[i];
+//            arr[i] = arr[l-i-1];
+//            arr[l-i-1] = temp;
+//
+//
+//        }
+//        for (int element : arr) {
+//            System.out.print(element + " " );
+//        }
 
+        // Problem 6
+        /*
+        int arr [] = {1,2,300,4,5,6};
+        int max = Integer.MIN_VALUE;
+        // Integer.MIN_VALUE
+        // Integer.MAX_VALUE
+        for(int e : arr){
+            if(e>max){
+                max = e;
 
+            }
 
+        }
+        System.out.println("The maximum element of the array is : " + max);
+          */
 
+        //Problem 7
+        /*
+        int arr [] = {10,2,300,4,5,6};
+        int max = Integer.MAX_VALUE;
+        // Integer.MIN_VALUE
+        // Integer.MAX_VALUE
+        for(int e : arr){
+            if(e<max){
+                max = e;
+
+            }
+
+        }
+        System.out.println("The smallest element of the array is : " + max);
+          */
+
+        //Problem 8
+        boolean isSorted = true;
+        int arr [] = {1,2,3,4,5,6};
+        for (int i = 0;i< arr.length-1;i++) {
+            if(arr[i] > arr[i+1]){
+                isSorted = false;
+                break;
+            }
+        }
+        if (isSorted) {
+            System.out.println("The array is sorted ");
+        } else {
+            System.out.println("The array is not sorted");
+        }
 
     }
 }
