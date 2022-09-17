@@ -37,3 +37,7 @@ public class cwh_40_ch9 {
 
     }
 }
+
+//Notes:
+// getters and setters are used to access
+// these private components such as name and id.
