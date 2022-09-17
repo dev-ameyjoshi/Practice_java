@@ -54,7 +54,7 @@ class CellPhone{
         System.out.println("Calling...");
     }
 }
-
+//String with no value gives null as result when printed on terminal.
 
 public class cwh_39_ch8ps {
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ public class cwh_39_ch8ps {
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
 //        Problem 4
-        Tommy player1 = new Tommy();
+        Tommy player1 = new Tommy(); // every class needs object initiation with new name.
         player1.hit();
         player1.run();
         player1.Firing();
