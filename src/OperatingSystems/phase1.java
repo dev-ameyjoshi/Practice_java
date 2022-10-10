@@ -55,6 +55,7 @@ class start
             l1=ch.substring(0,4);
             if(l1.equals("$AMJ"))
             {
+
                 String l2;
                 int length,i,j,linecount;
                 char c='A';
@@ -83,6 +84,8 @@ class start
                         linecount++;
                     }
                 }
+
+
             }
             else if(l1.equals("$DTA"))
             {
@@ -127,7 +130,7 @@ class start
         }
         IC++;
         operand=Character.getNumericValue(IR[2])*10+Character.getNumericValue(IR[3]);
-        System.out.println(IR[0]);
+       // System.out.println(IR[0]); --> To print IR Content.
         switch(IR[0])
         {
             case 'L':
@@ -221,7 +224,7 @@ class start
         }
         catch(Exception e)
         {
-            System.out.println("Error..." +e);
+            System.out.println("");
         }
     }
 
@@ -264,7 +267,7 @@ class start
 
     public void TERMINATE() throws IOException
     {
-        File file=new File("D:\\Amey Java\\Practice_java\\src\\OperatingSystems\\output1.txt");
+        File file=new File("D:\\Amey Java\\Practice_java\\src\\OperatingSystems\\output.txt");
         FileWriter fr=new FileWriter(file, true);
         BufferedWriter br1=new BufferedWriter(fr);
         br1.newLine();
