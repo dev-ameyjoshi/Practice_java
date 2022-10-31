@@ -33,6 +33,8 @@ class library {
     void issueBook(String book) {
         for (int i = 0; i < this.books.length; i++) {
             if (this.books[i].equals(book)) {
+                //The equals() method compares two strings,
+                // and returns true if the strings are equal, and false if not.
 
                 System.out.println("The Book has been issued.");
                 this.books[i] = null;
