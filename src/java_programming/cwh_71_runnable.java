@@ -48,6 +48,9 @@ public class cwh_71_runnable {
 
         System.out.println(bullet2.speedDown(b));
 
+        //Gives Concurrent processing.
+        //We can use the start method to start the thread which internally calls the method associated with it.
+
 
     }
 }

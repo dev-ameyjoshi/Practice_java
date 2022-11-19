@@ -40,6 +40,8 @@ static int a = 0;
 //           t2.start();
         System.out.println(t2.speedUp(a));
         System.out.println(t1.speedDown(a));
+
+
     }
 }
 // extra resource : https://doc  s.oracle.com/javase/7/docs/api/java/lang/Thread.html
