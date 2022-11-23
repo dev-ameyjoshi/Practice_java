@@ -1,9 +1,6 @@
 package college;
 
-//initial state is low
-//for nrzi--->1=transition,0=no transition
-//for differential manchester--->1=no transition,0=transition
-//for manchester--->logic 0=low to high , logic 1=high to low
+
 import java.awt.*;
 import java.awt.event.*;
 
