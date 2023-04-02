@@ -1,7 +1,8 @@
 package Ds_algo;
 import java.util.*;
 
-public class GraphBfs {
+
+public class GraphDfs {
     static class Edge{
         int src;
         int dest;
@@ -13,7 +14,7 @@ public class GraphBfs {
 
     public static void createGraph(ArrayList<Edge> graph[]) {
         for (int i =0;i<graph.length;i++) {
-        graph[i] = new ArrayList<Edge>();
+            graph[i] = new ArrayList<Edge>();
         }
 
         graph[0].add(new Edge(0,1));
@@ -43,27 +44,22 @@ public class GraphBfs {
 
 
     }
-    public static void BFS(ArrayList<Edge> graph[],int V,boolean vis[],int start){
-        Queue<Integer> q = new LinkedList<>();
 
-        q.add(start);
+    public static void dfs(ArrayList<Edge> graph[],int curr, boolean vis[]){
+        System.out.println(curr + " ");
+        vis[curr] = true;
 
-        while(!q.isEmpty()){
-           int curr = q.remove();
-           if(vis[curr] == false){
-               System.out.println(curr+" ");
-               vis[curr] = true;
-               for(int i = 0;i<graph[curr].size();i++){
-                   Edge e = graph[curr].get(i);
-                   q.add(e.dest);
-               }
+        for (int i = 0;i<graph[curr].size();i++) {
+            Edge e = graph[curr].get(i);
+            if(vis[e.dest] == false)
+                dfs(graph, e.dest, vis);
 
-           }
         }
     }
+
     public static void main(String[] args) {
 
-        /*
+ /*
           1----3
          /     | \
          0     |  5 -- 6
@@ -72,21 +68,15 @@ public class GraphBfs {
           Algo constructed based on above graph for BFS.
          */
         int V = 7;
+
         ArrayList<Edge> graph [] = new ArrayList[V];
         createGraph(graph);
 
         boolean vis[] = new boolean[V];
-
-        //Disconnected Graph : (and for regular values as well even if its not disconnected graph).
-        //works well for disconnected graph as it helps to go to the new node if not visited.
-        //and begins from it if not visited that is if its bool value is false.
-        //intially all bool values are false but as they are printed , they are then marked true.
-        //hence it will visit the node not connected in the graph.
-
+        //For disconnected graph.
         for (int i = 0;i<V;i++) {
-            if(vis[i] == false){
-                BFS(graph,V,vis,i);
-            }
+            if(vis[i] == false)
+                dfs(graph,i,vis);
         }
 
         System.out.println();
