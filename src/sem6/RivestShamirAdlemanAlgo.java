@@ -23,6 +23,7 @@ public class RivestShamirAdlemanAlgo {
 
         q = 17;
         n = p * q;
+        //phi(n) value
         z = (p - 1) * (q - 1);
         System.out.println("the value of z = " + z);
 
@@ -35,6 +36,7 @@ public class RivestShamirAdlemanAlgo {
         }
         System.out.println("the value of e = " + e);
         for (i = 0; i <= 9; i++) {
+            //value of private key is calculated here.
             int x = 1 + (i * z);
 
             // d is for private key exponent
